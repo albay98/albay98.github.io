@@ -1,0 +1,1419 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#top
+{
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  z-index: 4;
+}
+
+#top img  
+{
+  width: 30px;
+  height: auto;
+}
+
+body
+{
+	z-index: 1;
+}
+
+/*********************** DESKTOP ***************************/
+
+
+/*CAPÇELERA*/
+
+#cabecera 
+{
+	width: 100%;
+	height: 100px;
+	margin-top: 25px;
+	position: relative;
+}
+
+.logo img
+{
+	width: 170px;
+	height: auto;
+	cursor: pointer;
+	position: absolute;
+	left: 50px;
+	bottom: 15px;
+}
+
+.instagram img
+{
+	width: 50px;
+	height: auto;
+	border-radius: 50%;
+	cursor: pointer;
+  position: absolute;
+  right: 18%;
+
+}
+
+.reservar
+{
+	width: 200px;
+	height: 50px;
+	background-color: #AACAE3;
+	cursor: pointer;
+	list-style: none;
+	float: right;
+	position: absolute;
+	right: 110px;
+	padding-top: 7px;
+	border-radius: 0 25px 0 0;
+}
+
+.reservar li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.reservar:hover
+{
+	background-color: #D5C36A;
+	transition: .5s;
+}
+
+
+/*MENU*/
+
+input 
+{
+  display: none;
+}
+
+.open 
+{
+  background-color: black;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.open:before 
+{
+  content: "";
+  background-color: black;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: -8px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.open:after 
+{
+  content: "";
+  background-color: black;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: 4px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.menuOpen 
+{
+  width: 24px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+  float: right;
+ 	position: absolute;
+ 	right: 50px;
+ 	bottom: 60px;
+}
+
+.menuOpen:hover .open:before 
+{
+  top: -9px;
+}
+
+.menuOpen:hover .open:after 
+{
+  top: 5px;
+}
+
+.menu 
+{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #5AA9E6;
+  z-index: 899;
+}
+
+.menu label 
+{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.menu .menuContent 
+{
+  position: relative;
+  top: 25%;
+  text-align: left;
+  padding-bottom: 20px;
+  margin-top: -170px;
+}
+
+.menu ul 
+{
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.menu ul li a 
+{
+  display: block;
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 10px 0;
+  padding-left: 50px;
+}
+
+.menu ul li a:hover 
+{
+  color: #5AA9E6;
+}
+
+.menu ul li:hover 
+{
+  background: #FFE45E;
+}
+
+.menuEffects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+  transform: translateY(0%);
+  transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects 
+{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects ul 
+{
+  opacity: 1;
+}
+
+
+#menuToggle:checked ~ .menuOpen .open {
+  background-color: transparent;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+  content: "";
+  background-color: black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+  content: "";
+  background-color: black;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0;
+  right: 0;
+  /*z-index: 1;*/
+  z-index: 999;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects ul {
+  transform: translateY(-30%);
+}
+
+
+
+/*HERO*/
+
+
+#hero
+{
+  width: 100%;
+  height: 200px;
+  background-color: #F4C8C2;
+}
+
+.marquee
+{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.titulo 
+{
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 60s linear infinite;
+}
+
+@keyframes marquee 
+{
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+
+
+
+/*INTRO*/
+#filosofia
+{
+	margin-top: 100px;
+}
+
+.filosofia_titulo
+{
+	text-align: center;
+}
+
+.filosofia_texto
+{
+	width: 736px;
+	height: 90px;
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 60px;
+}
+
+
+
+/*VIDEO*/
+#local
+{
+	margin-top: 100px;
+	margin-bottom: 130px;
+}
+
+video
+{
+	width: 100%;
+	height: auto;
+}
+
+
+
+/*TRACTAMENTS*/
+#tractaments
+{
+	width: 100%;
+	height: auto;
+/*	background-color: lightgreen;*/
+	padding-top: 110px;
+/*	border-style: solid;*/
+	overflow: hidden;
+	position: relative;
+}
+
+.tractaments_titulo
+{
+	position: absolute;
+	text-align: left;
+	top: 0px;
+	left: 50px;
+	z-index: 7;
+}
+
+#tractaments_imagenes
+{
+	width: 1490px;
+	height: 570px;
+	/*background-color: darkgreen;*/
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 40px;
+
+}
+
+.fonsTractament
+{
+	width: 1490px;
+	height: 570px;
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#fonsTractamentO1
+{
+	background-image: url("../IMG/tractaments/pexels-yan-krukov-8911511.png");
+	background-color: orange;
+	z-index: 6;
+	position: absolute;
+
+}
+
+#fonsTractament2
+{
+	background-image: url("../IMG/tractaments/pexels-polina-tankilevitch-3738355.jpg");
+	background-color: lightgreen;
+	z-index: 5;
+	position: absolute;
+
+}
+
+#fonsTractament3
+{
+	background-image: url("../IMG/tractaments/pexels-gustavo-fring-3985338.jpg");
+	background-color: pink;
+	z-index: 4;	
+	position: absolute;
+}
+
+#fonsTractament4
+{
+	background-image: url("../IMG/tractaments/pexels-freestocksorg-457701.jpg");
+	background-color: blueviolet;
+	z-index: 3;
+	position: absolute;
+}
+
+#fonsTractament5
+{
+	background-image: url("../IMG/tractaments/pexels-angela-roma-7480009.jpg");
+	background-color: yellowgreen;
+	z-index: 2;	
+	position: absolute;
+}
+
+
+/*ANIMACIÓ*/
+
+.animEntrar 
+{
+	animation-name:imgQueEntra;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+
+.animSortir 
+{
+	animation-name:imgCentral;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+
+}
+
+.imgAmagada
+{
+	display: none;
+}
+
+@keyframes imgCentral 
+{
+
+	0%{margin-left:0%;}
+	100%{margin-left: -100%;}
+}
+
+@keyframes imgQueEntra 
+{
+
+	0%{margin-left: 100%;}
+	100%{margin-left: 0%;}
+}
+
+.tractament_boton
+{
+	width:270px;
+	height:90px;
+	background-color: #AACAE3;
+	margin-top: 10px;
+	margin-left: 45%;
+	cursor: pointer;
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	text-align: center;
+	border-radius: 0 30px 0 0;
+}
+
+.tractament_boton li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.tractament_boton:hover
+{
+	background-color: #D5C36A;
+	transition: .5s;
+}
+
+
+
+/*GALERIA*/
+#galeria
+{
+	width: 100%;
+	height: auto;
+/*	background-color: yellowgreen;*/
+	padding-top: 110px;
+/*	border-style: solid;*/
+	overflow: hidden;
+	position: relative;
+	top: 130px;
+}
+
+.galeria_titulo
+{
+	position: absolute;
+	text-align: left;
+	top: 0px;
+	left: 50px;
+}
+
+#imagen
+{
+	width: 1490px;
+	height: 621px;
+/*	background-color: yellow;*/
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 40px;
+	display: inline-flex;
+}
+
+.imgGaleria
+{
+	background-color: yellow;
+	width: 465px;
+	height: auto;
+	margin-left: 15px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.imgGaleria img 
+{
+	width: 100%;
+	height: auto;
+}
+
+#modalGal 
+{
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: none;
+  background-color: rgba(108, 122, 137, 0.3);
+
+}
+
+#imagetoShow 
+{
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgLB 
+{
+  width: 80%;
+  height: auto;
+  /*això és per centrar*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botoLB
+{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #AACAE3;
+  cursor: pointer;
+  border-style:solid;
+
+}
+
+#creuTancarLB 
+{
+  font-size: 2rem;
+  color: black;
+  position: absolute;
+  top: 60px;
+  right: 500px;
+}
+
+#creuTancarLB:hover
+{
+  cursor: pointer;
+  color: #5AA9E6;
+}
+
+.botoEsquerra
+{
+  left: 500px;
+}
+
+.botoDreta
+{
+  right: 500px;
+}
+
+.botoLB i
+{
+  font-size: 2rem;
+  color:black;
+}
+
+.botoLB i:hover
+{
+  font-size: 2rem;
+  color: #FFE45E;
+}
+
+
+.galeria_boton
+{
+	width:230px;
+	height:80px;
+	background-color: #AACAE3;
+	margin-top: 20px;
+	margin-left: 47%;
+	cursor: pointer;
+	list-style: none;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	text-align: center;
+	border-radius: 0 30px 0 0;
+}
+
+.galeria_boton li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.galeria_boton:hover
+{
+	background-color: #D5C36A;
+	transition: .5s;
+}
+
+
+
+
+/*RESERVAR*/
+#reservar
+{
+	width: 100%;
+	height: 960px;
+	margin-top: 115px;
+	position: relative;
+}
+
+.reservar_titulo
+{
+	text-align: left;
+	margin-left: 50px;
+	padding-top: 130px;
+}
+
+.reservar_boton
+{
+	width:200px;
+	height:60px;
+	background-color: #AACAE3;
+	margin-top: 5%;
+	margin-left: 45%;
+	cursor: pointer;
+	list-style: none;
+	padding-left: 15px;
+	padding-top: 13px;
+	border-radius: 0 30px 0 0;
+}
+
+.reservar_boton li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.reservar_boton:hover
+{
+	background-color: #D5C36A;
+	transition: .5s;
+}
+
+.fondo video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  top: 100px;
+}
+
+
+
+/*FOOTER*/
+#footer
+{
+	width: 100%;
+	height: 100px;
+  background-color: rgba(108, 122, 137, 0.4);
+	position: relative;
+}
+
+#footer img
+{
+	width: 130px;
+	height: auto;
+}
+
+.texto_footer
+{
+	display: inline-flex;
+	position: absolute;
+ 	left: 20%;
+ 	top: 30%;
+}
+
+.direccion
+{
+	width: 300px;
+	height: auto;
+	margin-left: 30px;
+}
+
+.numero
+{
+	width: 200px;
+	height: auto;
+	margin-left: 30px;
+}
+
+.correo
+{
+	text-decoration: none;
+	color: black;
+	width: 300px;
+	height: auto;
+	margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************** TABLET ***************************/
+
+
+@media only screen and (max-width: 900px) {
+
+
+	#top
+	{
+	  position: fixed;
+	  right: 10px;
+	  bottom: 20px;
+	  z-index: 2;
+	}
+
+	#top img  
+	{
+	  width: 20px;
+	  height: auto;
+	}
+  
+
+	/*CAPÇELERA*/
+
+  #cabecera 
+  {
+    margin-top: 55px;
+  }
+
+  .logo img
+  {
+    width: 130px;
+    bottom: 40px;
+  }
+
+  .instagram img
+  {
+    width: 30px;
+    right: 28%;
+    bottom: 70%;
+  }
+
+  .reservar
+  {
+    width: 120px;
+    height: 30px;
+    right: 90px;
+    padding-top: 6px;
+    padding-right: 3px;
+    border-radius: 0 25px 0 0;
+  }
+
+
+  /*MENU*/
+
+  .menuOpen 
+  {
+    bottom: 65px;
+   	right: 50px;
+  }
+
+  .menu 
+  {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .menu .menuContent 
+  {
+    position: relative;
+    top: 25%;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-top: -50px;
+    margin-right: 5px;
+  }
+
+	/*HOVER*/
+
+	#hero
+	{
+	  height: 120px;
+	}
+
+
+	/*INTRO*/
+	#filosofia
+	{
+		margin-top: 60px;
+	}
+
+	.filosofia_texto
+	{
+		width: 534px;
+		height: 48px;
+		margin-left: 17%;
+		margin-right: 0;
+		margin-top: 30px;
+	}
+
+
+ 	/*VIDEO*/
+	#local
+	{
+		margin-top: 130px;
+		margin-bottom: 130px;
+	}
+
+	
+	/*TRACTAMENTS*/
+	#tractaments
+	{
+		padding-top: 65px;
+	}
+
+	.tractaments_titulo
+	{
+		top: 10px;
+	}
+
+	#tractaments_imagenes
+	{
+		width: 650px;
+		height: 343px;
+		/*background-color: darkgreen;*/
+		margin-left: 110px;
+		margin-bottom: 40px;
+	}
+
+	.fonsTractament
+	{
+		width: 650px;
+		height: 343px;
+		position: absolute;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.tractament_boton
+	{
+		width:160px;
+		height:50px;
+		margin-left: 47%;
+		padding-top: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+	/*GALERIA*/
+	#galeria
+	{
+		top: 50px;
+	}
+
+	.galeria_titulo
+	{
+		top: 55px;
+	}
+
+	#imagen
+	{
+		width: 214px;
+		height: 291px;
+		margin-left: 80px;
+		/*margin-right: 50px;*/
+		margin-bottom: 40px;
+	}
+
+	.imgGaleria
+	{
+		width: 214px;
+		height: auto;
+		margin-left: 15px;
+	}
+
+	.galeria_boton
+	{
+		width:130px;
+		height:50px;
+		margin-left: 47%;
+		padding-top: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#imagetoShow 
+	{
+		width: 60vw;
+	}
+
+	.imgLB 
+	{
+		width: 100%;
+		height: auto;
+		/*això és per centrar*/
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.botoLB
+	{
+	  width: 40px;
+	  height: 40px;
+	}
+
+	#creuTancarLB 
+	{
+	  font-size: 1.5rem;
+	  top: 250px;
+	  right: 180px;
+	}
+
+	.botoEsquerra
+	{
+	  left: 130px;
+	}
+
+	.botoDreta
+	{
+	  right: 130px;
+	}
+
+	.botoLB i
+	{
+	  font-size: 1.5rem;
+	}
+
+
+	/*RESERVAR*/
+	#reservar
+	{
+		width: 100%;
+		height: 400px;
+		margin-top: 60px;
+	}
+
+	.reservar_titulo
+	{
+		text-align: left;
+		margin-left: 50px;
+		padding-top: 150px;
+	}
+
+	.reservar_boton
+	{
+    width: 130px;
+    height: 35px;
+    right: 100px;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-left: 13px;
+    border-radius: 0 25px 0 0;
+
+	}
+
+
+  /*FOOTER*/
+
+  #footer
+  {
+    top: 100px;
+  }
+
+  #footer img
+  {
+    width: 100px;
+    margin-bottom: -20px;
+  }
+
+  .texto_footer
+  {
+    display: inline-flex;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+  }
+
+  .direccion
+  {
+    width: 250px;
+    height: auto;
+    margin-left: 15px;
+  }
+
+  .numero
+  {
+    width: 135px;
+    height: auto;
+    margin-left: 15px;
+  }
+
+  .correo
+  {
+    width: 200px;
+    margin-left: 30px;
+  }
+
+  .copyright
+  {
+    font-size: 10px;
+    width: 190px;
+    position: absolute;
+    left: 30%;
+    top: 45px;
+  }
+
+}
+
+
+
+
+
+
+/*********************** MOBILE ***************************/
+
+
+@media only screen and (max-width: 450px) {
+
+
+	#top
+	{
+	  position: fixed;
+	  right: 10px;
+	  bottom: 20px;
+	  z-index: 2;
+	}
+
+	#top img  
+	{
+	  width: 20px;
+	  height: auto;
+	}
+  
+
+	/*CAPÇELERA*/
+
+  #cabecera 
+  {
+    margin-top: 25px;
+  }
+
+  .logo img
+  {
+    width: 120px;
+    bottom: 40px;
+    left: 10px;
+  }
+
+  .instagram img
+  {
+    width: 24px;
+    right: 37%;
+    bottom: 75%;
+  }
+
+  .reservar
+  {
+    width: 95px;
+    height: 25px;
+    right: 50px;
+    padding-top: 4px;
+    padding-right: 4px;
+  }
+
+
+  /*MENU*/
+
+  .menuOpen 
+  {
+  	width: 15px;
+    bottom: 70px;
+   	right: 20px;
+  }
+
+  .menu 
+  {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .menu .menuContent 
+  {
+    position: relative;
+    top: 25%;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-top: -50px;
+    margin-right: 0px;
+  }
+
+
+	.menu ul li a 
+	{
+	  padding-left: 10px;
+	}
+
+
+	/*HOVER*/
+
+	#hero
+	{
+	  height: 60px;
+	}
+
+
+	/*INTRO*/
+	#filosofia
+	{
+		margin-top: 43px;
+	}
+
+	.filosofia_texto
+	{
+		width: 309px;
+		height: 48px;
+		margin-left: 13%;
+		margin-right: 0;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+
+ 	/*VIDEO*/
+	#local
+	{
+		margin-top: 150px;
+		margin-bottom: 80px;
+	}
+
+	/*TRACTAMENTS*/
+	#tractaments
+	{
+		padding-top: 30px;
+	}
+
+	.tractaments_titulo
+	{
+		top: 0px;
+		left: 10px;
+	}
+
+	#tractaments_imagenes
+	{
+		width: 392px;
+		height: 190px;
+		/*background-color: darkgreen;*/
+		margin-left: 35px;
+		margin-bottom: 40px;
+	}
+
+	.fonsTractament
+	{
+		width: 360px;
+		height: 190px;
+	}
+
+	.tractament_boton
+	{
+		width:130px;
+		height:45px;
+		margin-left: 35%;
+		padding-top: 5px;
+	}
+
+
+	/*GALERIA*/
+	#galeria
+	{
+		top: 15spx;
+	}
+
+	.galeria_titulo
+	{
+		top: 75px;
+		left: 10px;
+		z-index: 7;
+	}
+
+	.imagenNone
+	{
+		display: none;
+	}
+
+	#imagen
+	{
+		width: 392px;
+		height: 291px;
+		margin-left: 30px;
+		margin-bottom: 40px;
+	}
+
+	.imgGaleria
+	{
+		width: 350px;
+		height: auto;
+		position: relative;
+		z-index: 1;
+	}
+
+	#modalGal 
+	{
+	  display: none;
+	   background-color: rgba(108, 122, 137, 0.0);
+
+	}
+
+	#imagetoShow 
+	{
+		display: none;
+	}
+
+	.imgLB 
+	{
+		display: none;
+	}
+
+	.botoLB
+	{
+		display: none;
+	}
+
+	#creuTancarLB 
+	{
+		display: none;
+	}
+
+	#creuTancarLB:hover
+	{
+		display: none;
+	}
+
+	.botoEsquerra
+	{
+		display: none;
+	}
+
+	.botoDreta
+	{
+	  display: none;
+	}
+
+	.botoLB i
+	{
+		display: none;
+	}
+
+	.botoLB i:hover
+	{
+		display: none;
+	}
+
+	.galeria_boton
+	{
+		position: absolute;
+		width:130px;
+		height:45px;
+		top: 80%;
+		left: -12%;
+		padding-top: 3px;
+		z-index: 2;
+	}
+
+
+	/*RESERVAR*/
+	#reservar
+	{
+		width: 100%;
+		height: 295px;
+		margin-top: 10px;
+	}
+
+	.reservar_titulo
+	{
+		text-align: left;
+		margin-left: 10px;
+		padding-top: 130px;
+	}
+
+	.reservar_boton
+	{
+    width: 100px;
+    height: 30px;
+   	right: 110px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 0 25px 0 0;
+	}
+
+
+  /*FOOTER*/
+
+  #footer
+  {
+    top: 100px;
+  }
+
+  #footer img
+  {
+    width: 80px;
+    margin-bottom: -10px;
+    left: 5;
+  }
+
+  .texto_footer
+  {
+    display: inline-flex;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+  }
+
+  .direccion
+  {
+    width: 100px;
+    height: auto;
+    margin-left: 30px;
+  }
+
+  .numero
+  {
+    width: 80px;
+    height: auto;
+    margin-left: 8px;
+  }
+
+  .correo
+  {
+    width: 150px;
+    margin-left: -80px;
+    margin-top: 20px;
+  }
+
+  .copyright
+  {
+    font-size: 10px;
+    width: 190px;
+    position: absolute;
+    left: 15%;
+    top: 50px;
+  }
+
+}

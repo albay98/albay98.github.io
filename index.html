@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/index.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" type="image/png" href="IMG/favicon.png">
+	<script src="JAVA/index.js"></script>
+
+<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/all.min.css">
+	<title>Essential Beauty</title>
+</head>
+<body>
+	<div id="top">
+		<a href="#"><img src="IMG/up-arrow.png" alt="logo boton subida"></a>
+	</div>
+
+<!-- CABECERA -->
+	<nav id="cabecera">
+		<div class="logo">
+			<img src="IMG/logo.png" alt="logo">
+		</div>
+
+		<div class="instagram">
+			<a href="https://www.instagram.com/essentialbeautycalafell/" target="_blank"><img src="IMG/instagram.png" alt="instagram"></a>
+		</div>
+
+		<div class="reservar boton">
+			<li><a class="boton" href="reservar.html">RESERVAR</a></li>
+		</div>
+
+		<div id="menuArea">
+   			<input type="checkbox" id="menuToggle"></input>
+
+  			<label for="menuToggle" class="menuOpen">
+    			<div class="open"></div>
+  			</label>
+
+  			<div class="menu menuEffects">
+    			<label for="menuToggle"></label>
+    			<div class="menuContent">
+      			<ul>
+        			<li><a href="tractaments.html" class="titulo_home">TRACTAMENTS</a></li>
+        			<li><a href="galeria.html" class="titulo_home">GALERIA</a></li>
+        			<li><a href="reservar.html" class="titulo_home">RESERVAR</a></li>
+        			<li><a href="contacte.html" class="titulo_home">CONTACTE</a></li>
+      			</ul>
+    		</div>
+  		</div> 
+	</nav>
+
+<!-- HERO -->
+	<section id="hero">
+		<div class="marquee">
+  			<div class="titulo">
+   			 	<div class="content titulo_hero"> · CENTRO DE DIOSAS · CENTRO DE DIOSAS · CENTRO DE DIOSAS · CENTRO DE DIOSAS · CENTRO DE DIOSAS · CENTRO DE DIOSAS · CENTRO DE DIOSAS ·CENTRO DE DIOSAS  · </div>
+  			</div>
+		</div>
+	</section>
+
+<!-- ABOUT -->
+	<section id="filosofia">
+		<div class="filosofia_titulo subtitulo">
+			<h3>Tenim els millors!</h3>
+		</div>
+
+		<div class="filosofia_texto texto_base">
+			<h3>Tractaments de bellesa que et deixaran amb un gran WOW! cada vegada que et miris en el mirall. Més l'atenció de les millors professionals que trobaràs a Calafell. T'advertim només tindreu ganes de tornar.</h3>
+		</div>
+	</section>
+
+<!-- LOCAL -->
+	<section id="local">
+		<video src="media/video1.mp4" autoplay="" muted="" loop=""></video>
+	</section>
+
+
+<!-- TRACTAMENTS -->
+	<section id="tractaments">
+		
+		<h3 class="tractaments_titulo titulo_home">TRACTAMENTS</h3>
+		<div id="tractaments_imagenes">
+			<div class="fonsTractament" id="fonsTractamentO1"></div>
+			<div class="fonsTractament" id="fonsTractament2"></div>
+			<div class="fonsTractament" id="fonsTractament3"></div>
+			<div class="fonsTractament" id="fonsTractament4"></div>
+			<div class="fonsTractament" id="fonsTractament5"></div>
+		</div>
+
+		<div class="tractament_boton boton">
+			<li><a class="boton" href="tractaments.html">VEURE TRACTAMENTS</a></li>
+		</div>
+	</section>
+
+<!-- GALERIA -->
+	<section id="galeria">
+		
+		<h3 class="galeria_titulo titulo_home">GALERIA</h3>
+		
+		<div id="imagen">
+			<div class="item">
+				<img class="imgGaleria" src="IMG/GALERIA/maquillaje1.jpg" alt="maquillaje1">
+			</div>
+
+			<div class="item">
+				<img class="imgGaleria imagenNone" src="IMG/GALERIA/pestañas1.jpg" alt="pestañas1">
+			</div>
+
+			<div class="item">
+				<img class="imgGaleria imagenNone" src="IMG/GALERIA/tractaments1.jpg" alt="tractaments1">
+			</div>
+		</div>
+
+		<div id="modalGal">
+
+			<div id="imagetoShow"></div>
+
+			<i id="creuTancarLB" class="fas fa-times" onclick="closeLightbox()"></i>
+			<button class="botoLB botoEsquerra" onclick="prevImgGal()"><i class="fas fa-angle-left"></i></button>
+			<button class="botoLB botoDreta" onclick="nextImgGal()"><i class="fas fa-angle-right"></i></button>
+		
+		</div>
+
+		<div class="galeria_boton">
+			<li><a class="boton" href="galeria.html">VEURE GALERIA</a></li>
+		</div>
+
+	</section>
+
+
+
+<!-- RESERVAR -->
+	<section id="reservar">
+
+		<div class="fondo">
+			<video src="media/pexels-miguel-á-padriñán-6772574.mp4" autoplay="" muted="" loop=""></video>
+	
+			<div class="reservar_titulo titulo_home">
+				<h3>RESERVA <BR>LA TEVA CITA</h3>
+			</div>
+
+			<div class="reservar_boton">
+				 <li><a class="boton" href="reservar.html">RESERVAR</a></li>
+			</div>
+		</div>
+	</section>
+
+
+<!-- FOOTER -->
+	<section id="footer">
+		<div class="logo">
+			<a href="index.html" ><img src="IMG/logo.png" alt="logo"></a>
+		</div>
+		<div class="texto_footer">
+			<p class="direccion">Carrer de Vilamar, 32, 43820 Calafell, Tarragona</p>
+			<p class="numero">+34 123 456  789</p>
+			<a class="correo" href="mailto:info@essentialbeauty.com">info@essentialbeauty.com</a>
+
+			<p class="copyright">Copyright 2022 - Fet per Alba Yñiguez</p>
+		</div>
+	</section>
+	
+
+
+
+<!-- Script -->
+<script>
+		
+	// SLIDER TRACTAMENTS
+	setInterval(slideShowAnim, 3000);
+
+	// LIGHTBOX GALERIA
+	readyLightbox();
+
+</script>
+
+</body>
+</html>
+
+
+
+

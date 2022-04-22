@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Proyecto 2 Essential Beauty">
+	<meta name="author" content="Alba Yñiguez">
+	<meta name="keywords" content="proyecto, web, interactiva, estètica">
+	<meta name="revised" content="Març 2022">
+	<link rel="stylesheet" href="CSS/reservar.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" type="image/png" href="IMG/favicon.png">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/all.min.css">
+	<title>Essential Beauty</title>
+</head>
+<body>
+	<div id="top">
+		<a href="#"><img src="IMG/up-arrow.png" alt="logo boton subida"></a>
+	</div>
+<!-- CABECERA -->
+	<nav id="cabecera">
+		<div class="logo">
+			<a href="index.html"><img src="IMG/logo.png" alt="logo"></a>
+		</div>
+		
+		<div class="instagram">
+			<a href="https://www.instagram.com/essentialbeautycalafell/" target="_blank"><img src="IMG/instagram.png" alt="instagram"></a>
+		</div>
+		<div id="menuArea">
+   			<input type="checkbox" id="menuToggle"></input>
+
+  			<label for="menuToggle" class="menuOpen">
+    			<div class="open"></div>
+  			</label>
+
+  			<div class="menu menuEffects">
+    			<label for="menuToggle"></label>
+    			<div class="menuContent">
+      			<ul>
+        			<li><a href="tractaments.html" class="titulo_home">TRACTAMENTS</a></li>
+        			<li><a href="galeria.html" class="titulo_home">GALERIA</a></li>
+        			<li><a href="reservar.html" class="titulo_home">RESERVAR</a></li>
+        			<li><a href="contacte.html" class="titulo_home">CONTACTE</a></li>
+      			</ul>
+    		</div>
+  		</div>
+	</nav>
+
+
+<!-- TEXTO Y TITULO -->
+	<div id="texto">
+		<p class="texto_base">No esperis més i demana cita al nostre centre!</p>
+	</div>
+
+	<div id="titulo">
+			<h1 class="titulo_vertical2">RESERVA LA TEVA CITA</h1>
+		</div>
+
+
+<!-- FORMULARIO -->
+<div class="container">
+	<div class="contact">
+		<form id="contact-form" action="#modal">
+
+			<p>
+				<label>Nom</label>
+				<textarea type="text" id="nom" required></textarea>
+			</p>
+
+			<p>
+				<label>Cognoms</label>
+				<textarea type="text" id="cognom" required> </textarea>
+			</p>
+
+			<p>
+				<label>Correu</label>
+				<textarea type="email" id="email" required></textarea>
+			</p>
+
+			<p>
+				<label>Número</label>
+				<textarea type="text" id="numero"></textarea>
+			</p>
+
+			<div>
+				<label>Dia i hora</label><hr>
+			  <h1 class="mes">Juny 2022</h1>
+			  <ol>
+			    <li class="day-name">Lun</li>
+			    <li class="day-name">Mar</li>
+			    <li class="day-name">Mié</li>
+			    <li class="day-name">Jue</li>
+			    <li class="day-name">Vie</li>
+			    <li class="day-name">Sáb</li>
+			    <li class="day-name">Dom</li>
+
+			    <li class="first-day">1</li>
+			    <li class="day-number">2</li>
+			    <li class="day-number">3</li>
+			    <li class="day-number">4</li>
+			    <li class="day-number">5</li>
+			    <li class="day-number">6</li>
+			    <li class="day-number">7</li>
+			    <li class="day-number">8</li>
+			    <li class="day-number">9</li>
+			    <li class="day-number">10</li>
+			    <li class="day-number">11</li>
+			    <li class="day-number">12</li>
+			    <li class="day-number">13</li>
+			    <li class="day-number">14</li>
+			    <li class="day-number">15</li>
+			    <li class="day-number">16</li>
+			    <li class="day-number">17</li>
+			    <li class="day-number">18</li>
+			    <li class="day-number">19</li>
+			    <li class="day-number">20</li>
+			    <li class="day-number">21</li>
+			    <li class="day-number">21</li>
+			    <li class="day-number">22</li>
+			    <li class="day-number">23</li>
+			    <li class="day-number">24</li>
+			    <li class="day-number">25</li>
+			    <li class="day-number">26</li>
+			    <li class="day-number">27</li>
+			    <li class="day-number">28</li>
+			    <li class="day-number">29</li>
+			    <li class="day-number">30</li>
+			    <li class="day-number">31</li>
+			  </ol>
+
+			  <select name="hora">
+					<option>9:00</option>
+					<option>10:00</option>
+					<option>11:00</option>
+					<option>12:00</option>
+					<option>13:00</option>
+					<option>14:00</option>
+					<option>17:00</option>
+					<option>18:00</option>
+					<option>19:00</option>
+					<option>20:00</option>
+					<option>21:00</option>
+				</select>
+			</div>
+
+			<p class="full">
+				<label>Tractament</label>
+				<select class="tractament">
+					<option>Depilació de celles amb fil</option>
+					<option>Llavis amb fil</option>
+					<option>Depilació facial completa amb fil</option>
+					<option>Neteja de celles amb pinça</option>
+					<option>Linia d'ulls superior</option>
+					<option>Linia d'ulls superior Soft Liner</option>
+					<option>Linia d'ulls inferior</option>
+					<option>Celles pèl a pèl</option>
+					<option>Celles Ombre Browns</option>
+					<option>Microblading</option>
+					<option>Llavis Glossy Lips</option>
+					<option>MESOHA+C</option>
+					<option>MESO WHITE</option>
+					<option>MESO WHITE BOOSTER</option>
+					<option>MESO CALM </option>
+					<option>MESO LIFT</option>
+					<option>HIGIENE FACIAL</option>
+					<option>Maquillatge de dia</option>
+					<option>Maquillatge de nit</option>
+					<option>Maquillatge de núvia</option>
+					<option>Extensió de pestanyes:Pèl a pèl, 2D, 3D, 4D, 5D y 6D</option>
+					<option>Relleno extensión de pestañas: Entre 1 y 15 días naturales</option>
+					<option>Relleno extensión de pestañas: Entre 15 y 30 días naturales </option>
+					<option>Quitar extensión de pestañas</option>
+					<option>Lifting+Tinte+Bòtox de pestanyes </option>
+					<option>Permanent+Tinte+Bòtox de pestanyes</option>
+					<option>Allisat+Tinte+Bòtox de celles</option>
+					<option>Tinte+Bòtox de celles</option>
+
+
+				</select>
+
+			</p>
+
+			<p class="full">
+				<label>Missatge</label>
+				<textarea id="missatge"></textarea>
+			</p>
+
+			<p class="full" id="botonEnviarReserva" >
+				<button type="submit">ENVIAR</button>
+			</p>
+
+		</form>
+	</div>
+</div>
+
+<!--POPUP ENVIAR RESERVA -->
+<div class="container-all" id="modal">
+	<div class="popup">
+		<div class="container-text" id="popup">
+			<h1>LA TEVA RESERVA HA SIGUT ENVIADA CORRECTAMENT!</h1>
+		</div>
+
+		<a href="reservar.html" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+	</div>
+</div>
+
+<!-- FOOTER -->
+	<section id="footer">
+		<div class="logo">
+			<a href="index.html" ><img src="IMG/logo.png" alt="logo"></a>
+		</div>
+		<div class="texto_footer">
+			<p class="direccion">Carrer de Vilamar, 32, 43820 Calafell, Tarragona</p>
+			<p class="numero">+34 123 456  789</p>
+			<a class="correo" href="mailto:info@essentialbeauty.com">info@essentialbeauty.com</a>
+
+			<p class="copyright">Copyright 2022 - Fet per Alba Yñiguez</p>
+		</div>
+	</section>
+	
+	
+</body>
+</html>

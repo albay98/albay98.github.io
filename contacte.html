@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Proyecto 2 Essential Beauty">
+	<meta name="author" content="Alba Yñiguez">
+	<meta name="keywords" content="proyecto, web, interactiva, estètica">
+	<meta name="revised" content="Març 2022">
+	<link rel="stylesheet" href="CSS/contacte.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" type="image/png" href="IMG/favicon.png">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/all.min.css">
+	<title>Essential Beauty</title>
+</head>
+<body>
+	<div id="top">
+		<a href="#"><img src="IMG/up-arrow.png" alt="logo boton subida"></a>
+	</div>
+
+	<!-- CABECERA -->
+	<nav id="cabecera">
+		<div class="logo">
+			<a href="index.html" ><img src="IMG/logo.png" alt="logo"></a>
+		</div>
+
+		<div class="instagram">
+			<a href="https://www.instagram.com/essentialbeautycalafell/" target="_blank"><img src="IMG/instagram.png" alt="instagram"></a>
+		</div>
+
+		<div class="reservar boton">
+			<li><a class="boton" href="reservar.html">RESERVAR</a></li>
+		</div>
+
+		<div id="menuArea">
+   			<input type="checkbox" id="menuToggle"></input>
+
+  			<label for="menuToggle" class="menuOpen">
+    			<div class="open"></div>
+  			</label>
+
+  			<div class="menu menuEffects">
+    			<label for="menuToggle"></label>
+    			<div class="menuContent">
+      			<ul>
+        			<li><a href="tractaments.html" class="titulo_home">TRACTAMENTS</a></li>
+        			<li><a href="galeria.html" class="titulo_home">GALERIA</a></li>
+        			<li><a href="reservar.html" class="titulo_home">RESERVAR</a></li>
+        			<li><a href="contacte.html" class="titulo_home">CONTACTE</a></li>
+      			</ul>
+    		</div>
+  		</div> 
+	</nav>
+
+<!-- TEXTO Y TITULO -->
+	<div id="texto">
+		<p class="texto_base">
+			Carrer de Vilamar, 32, 43820 Calafell, Tarragona
+			<br>
+			+34 123 456  789
+			<br>
+			<a href="mailto:info@essentialbeauty.com">info@essentialbeauty.com</a>
+			
+		</p>
+
+		<p class="horari">
+			HORARI <br>
+			De dilluns a divendres 9:30 - 20:00 <br>
+			De dissabte a diumenge 10:00 - 14:00
+		</p>
+	</div>
+
+	<div id="titulo">
+		<h1 class="titulo_vertical">CONTACTE</h1>
+	</div>
+
+<!-- MAPA -->
+	<div class="mapa">
+		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.564849803927!2d1.5693979156983877!3d41.187657416315346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a38d86d1441d33%3A0x924c0d37fd0dc2f2!2sESSENTIAL%20BEAUTY!5e0!3m2!1ses!2ses!4v1647974913936!5m2!1ses!2ses" width="1553" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+	</div>
+
+<!-- FORMULARIO -->
+<h3>Si tens qualsevol dubte, escriu-nos!</h3>
+<div class="container">
+	<div class="contact">
+		<form id="contact-form" action="#modal">
+
+			<p>
+				<label>Nom</label>
+				<textarea type="text" id="nom" required></textarea>
+			</p>
+
+			<p>
+				<label>Cognoms</label>
+				<textarea type="text" id="cognom"></textarea>
+			</p>
+
+			<p>
+				<label>Correu</label>
+				<textarea type="email" id="email" required></textarea>
+			</p>
+
+			<p>
+				<label>Número</label>
+				<textarea type="text" id="numero"></textarea>
+			</p>
+
+			<p class="full">
+				<label>Missatge</label>
+				<textarea id="missatge"></textarea>
+			</p>
+
+			<p id="botonEnviarContacto" class="full">
+				<button type="submit">ENVIAR</button></form>
+			</p>
+
+		</form>
+	</div>
+</div>
+
+
+<!--POPUP ENVIAR CONTACTE -->
+<div class="container-all" id="modal">
+	<div class="popup">
+		<div class="container-text" id="popup">
+			<h1>EL TEU MISSATGE SIGUT ENVIAT CORRECTAMENT!</h1>
+		</div>
+
+		<a href="contacte.html" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+	</div>
+</div>
+
+
+
+<!-- FOOTER -->
+	<section id="footer">
+		<div class="logo">
+			<a href="index.html" ><img src="IMG/logo.png" alt="logo"></a>
+		</div>
+		<div class="texto_footer">
+			<p class="direccion">Carrer de Vilamar, 32, 43820 Calafell, Tarragona</p>
+			<p class="numero">+34 123 456  789</p>
+			<a class="correo" href="mailto:info@essentialbeauty.com">info@essentialbeauty.com</a>
+
+			<p class="copyright">Copyright 2022 - Fet per Alba Yñiguez</p>
+		</div>
+	</section>
+	
+</body>
+</html>

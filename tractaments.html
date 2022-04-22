@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/tractaments.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="JAVA/tractaments.js"></script>
+	<link rel="icon" type="image/png" href="IMG/favicon.png">
+	<title>Essential Beauty</title>
+</head>
+<body>
+	<div id="top">
+		<a href="#"><img src="IMG/up-arrow.png" alt="logo boton subida"></a>
+	</div>
+	
+<!-- CABECERA -->
+	<nav id="cabecera">
+		<div class="logo">
+			<a href="index.html" ><img src="IMG/logo.png" alt="logo"></a>
+		</div>
+
+		<div class="instagram">
+			<a href="https://www.instagram.com/essentialbeautycalafell/" target="_blank"><img src="IMG/instagram.png" alt="instagram"></a>
+		</div>
+
+		<div class="reservar boton">
+			<li><a class="boton" href="reservar.html">RESERVAR</a></li>
+		</div>
+
+		<div id="menuArea">
+   			<input type="checkbox" id="menuToggle"></input>
+
+  			<label for="menuToggle" class="menuOpen">
+    			<div class="open"></div>
+  			</label>
+
+  			<div class="menu menuEffects">
+    			<label for="menuToggle"></label>
+    			<div class="menuContent">
+      			<ul>
+        			<li><a href="tractaments.html" class="titulo_home">TRACTAMENTS</a></li>
+        			<li><a href="galeria.html" class="titulo_home">GALERIA</a></li>
+        			<li><a href="reservar.html" class="titulo_home">RESERVAR</a></li>
+        			<li><a href="contacte.html" class="titulo_home">CONTACTE</a></li>
+      			</ul>
+    		</div>
+  		</div> 
+	</nav>
+
+
+
+<!-- TEXTO Y TITULO -->
+	
+	<div id="texto">
+		<p class="texto_base">Els nostres serveis compten amb els millors productes, pensant no sols en la teva bellesa si no en la teva salut. Pas a pas establim al costat de tu el millor disseny que s'ajusta al teu estil de vida propi o esdeveniment especial. I tots els nostres productes brinden un tractament integral a la teva mirada.</p>
+	</div>
+
+	<div id="titulo">
+		<h1 class="titulo_vertical">TRACTAMENTS</h1>
+	</div>
+ 
+
+ <!-- PESTAÑAS ACORDEON -->
+	<div class="servicios">
+	
+	<!-- DEPILACIÓ FACIAL -->
+		<div class="triggerTab titulo_serveis" id="triggertab1" onclick="showContTab(event, 'contTab1')">DEPILACIÓ FACIAL</div>
+
+		<div class="targetTabs" id="contTab1">
+			<p class="texto_base">Una tècnica professional per a la depilació del teu rostre assegura que cada pas en l'extracció del bell facial sigui eficient en la reaparició d'aquest. A més t'assegurem un disseny de mirada únic que potenciï la teva bellesa natural.
+			</p>
+
+			<div id="contenidor depilacio_facial">
+					<div class="caja">
+						<div class="texto texto_baseSemiBold">Depilació de <br>celles amb fil</div>
+						<hr>
+						<div class="info">
+							<div class="icon_reloj">
+								<img  src="IMG/clock.png" alt="reloj">
+								<p class="texto_icon_reloj texto_base">1 h</p>
+							</div>
+							
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">15€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja">
+						<div class="texto texto_baseSemiBold">Llavis amb fil</div>
+						<hr>
+						<div class="info">
+							<div class="icon_reloj">
+								<img  src="IMG/clock.png" alt="reloj">
+								<p class="texto_icon_reloj texto_base">30 min</p>
+							</div>
+							
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">5€</p>
+							</div>
+						</div>
+					</div>
+					<div class="caja">
+						<div class="texto texto_baseSemiBold">Depilació facial <br> completa amb fil</div>
+						<hr>
+						<div class="info">
+							<div class="icon_reloj">
+								<img  src="IMG/clock.png" alt="reloj">
+								<p class="texto_icon_reloj texto_base">1:30 h</p>
+							</div>
+							
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">25€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja">
+						<div class="texto texto_baseSemiBold">Neteja de celles <br> amb pinça</div>
+						<hr>
+						<div class="info">
+							<div class="icon_reloj">
+								<img  src="IMG/clock.png" alt="reloj">
+								<p class="texto_icon_reloj texto_base">45 min</p>
+							</div>
+							
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">10€</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+		
+	<!-- MICROPIGMENTACIÓ -->
+		<div class="triggerTab titulo_serveis" id="triggertab2" onclick="showContTab(event, 'contTab2')">MICROPIGMENTACIÓ</div>
+
+		<div class="targetTabs" id="contTab2">
+			<p class="texto_base">És moment de gaudir del teu temps i despertar cada matí divina i llista per als reptes del dia a dia, guarda les teves brotxes i el labial i descobreix aquest mètode efectiu per a destacar la teva bellesa. Una sola sessió a les mans especialitzades del nostre personal i adeu al maquillatge de celles i llavis i usem els millors materials per a garantir molts dies lluint perfecta
+			</p>
+
+			<div id="contenidor">
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Linia d'ulls <br>superior</div>
+						<hr>
+						<div class="info">					
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">200€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Linia d'ulls<br>superior Soft Liner</div>
+						<hr>
+						<div class="info">
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">230€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Linia d'ulls<br>inferior</div>
+						<hr>
+						<div class="info">
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">160€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Celles<br>pèl a pèl</div>
+						<hr>
+						<div class="info">
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">200€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Celles<br>Ombre Browns</div>
+						<hr>
+						<div class="info">
+						
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">230€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Microblading</div>
+						<hr>
+						<div class="info">
+						
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">150€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Llavis <br>Glossy Lips</div>
+						<hr>
+						<div class="info">
+
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">280€</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+	<!-- TRACTAMENTS FACIALS -->
+		<div class="triggerTab titulo_serveis" id="triggertab3" onclick="showContTab(event, 'contTab3')">TRACTAMENTS FACIALS</div>
+
+		<div class="targetTabs" id="contTab3">
+			<p class="texto_base">Amb totes les sessions aconsegueixes: recuperar la vitalitat del to opac de la pell, emplenar arrugues, fines línies d'expressió, plecs, taques de hiperpigmentación, allisar cicatrius per acne i post-acne i eliminar estries, cel·lulitis. <br>
+				<br>
+			1ª sessió 140€ /
+			2ª sessió 120€ /
+			3ª sessió 90€ /
+			4ª sessió 40€
+			TOTAL 4 sesiones 390€
+			</p>
+
+
+			<div id="contenidor">
+					<div class="caja4">
+						<div class="texto4 texto_baseSemiBold">MESOHA+C</div>
+						<hr>
+						<div class="info4 texto_basemini">					
+							Àcid (Hialurònic + Vitamina C) Revitalització profunda de la pell,
+							especialment per a pells amb falta de fermesa i elasticitat, pell
+							envellida.
+						</div>
+					</div>
+
+					<div class="caja4">
+						<div class="texto4 texto_baseSemiBold">MESO WHITE</div>
+						<hr>
+						<div class="info4 texto_basemini">
+							Restaura el to de la pell fosca, ulleres, redueix l'aparició de pigues i descoloració.
+						</div>
+					</div>
+
+					<div class="caja4">
+						<div class="texto4 texto_baseSemiBold">MESO WHITE BOOSTER</div>
+						<hr>
+						<div class="info4 texto_basemini">
+							Frena el procés d'envelliment fotogràfic, hiperpigmentación, neutralitza els radicals lliures i disminueix la síntesi de melanina.
+						</div>
+					</div>
+
+
+					<div class="caja4">
+						<div class="texto4 texto_baseSemiBold">MESO CALM </div>
+						<hr>
+						<div class="info4 texto_basemini">
+							Per a pells sensibles, enrogides, irritades. Posseeix propietats calmants pel que pot ser aplicat en pells amb acne, rosàcia, danyades pel sol.
+						</div>
+					</div>
+
+					<div class="caja4">
+						<div class="texto4 texto_baseSemiBold">MESO LIFT</div>
+						<hr>
+						<div class="info4 texto_basemini">
+							Sèrum lífting amb efecte Botox per a reduir arrugues mímiques, per a pells majors de 45 anys amb arrugues molt visibles, hiperpigmentación. 
+						</div>
+					</div>
+
+					<div class="caja4">
+						<div class="texto4 texto_baseSemiBold">HIGIENE FACIAL</div>
+						<hr>
+						<div class="info4 texto_basemini">
+								Màscara de carbó actiu, neteja, exfoliació, extracció, màscara tractant, sèrum específic, hidratació
+
+						</div>
+					</div>
+				</div>
+		</div>
+
+
+<!-- MAQUILLATGE -->
+		<div class="triggerTab titulo_serveis" id="triggertab4" onclick="showContTab(event, 'contTab4')">MAQUILLATGE</div>
+
+		<div class="targetTabs" id="contTab4">
+			<p class="texto_base">Es necessita un ull enginyós per a veure la bellesa i el potencial de cada rostre. Un artista professional no sols està capacitat per a aplicar maquillatge impecable i durador, sinó que també és expert en l'art de fer-te sentir a gust en cada aspecte del procés, des dels cronogrames detallats del dia d'aquest esdeveniment important fins a treballar amb tu per a crear un estil de maquillatge impressionant que transcendir el temps. Determinem els millors tons i personalitzem al màxim el maquillatge d'acord amb les teves faccions i to de pell. No importa les hores que passin, el maquillatge dura fins al final de l'esdeveniment!
+			</p>
+
+			<div id="contenidor">
+					<div class="caja5">
+						<div class="texto5 texto_baseSemiBold">Maquillatge <br>de dia</div>
+						<hr>
+						<div class="info texto_base">		
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">30€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja5">
+						<div class="texto5 texto_baseSemiBold">Maquillatge <br>de nit</div>
+						<hr>
+						<div class="info texto_base">		
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">50€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja5">
+						<div class="texto5 texto_baseSemiBold">Maquillatge <br>de núvia</div>
+						<hr>
+						<div class="info texto_base">
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">100€</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+
+<!-- PESTANYES I CELLES -->
+		<div class="triggerTab titulo_serveis" id="triggertab5" onclick="showContTab(event, 'contTab5')">PESTANYES I CELLES</div>
+
+		<div class="targetTabs" id="contTab5">
+			<p class="texto_base">
+			Si alguna vegada has somiat amb prescindir del maquillatge i estalviar-te temps i diners en la teva rutina de bellesa diària, explora al costat de nosaltres un sinúmero de possibilitats i trobarem la que millor s'ajusti a tu.
+
+			Tenim tots els serveis per a la cura de les teves pestanyes i les nostres extensions et garanteixen una mirada fresca a tota hora. A més et proporcionem un disseny de celles que emmarquin perfectament el teu perfil i estructura facial potenciant la teva aparença en modificar la forma en què es veuen els teus trets.
+
+			</p>
+
+			<div id="contenidor">
+					<div class="caja2">
+						<div class="texto6 texto_baseSemiBold">Extensió de pestanyes pèl a pèl (2D - 6D)</div>
+						<hr>
+						<div class="info">					
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">65€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Omplir extensió de pestanyes</div>
+						<hr>
+						<div class="info">
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">30€ / 50€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Treure extensions de pestanyes</div>
+						<hr>
+						<div class="info">
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">15€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto6 texto_baseSemiBold">Lifting+Tinte+ <br>Bòtox de pestanyes</div>
+						<hr>
+						<div class="info">
+						
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">30€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto6 texto_baseSemiBold">Permanent+ <br>Tinte+Bòtox <br> de pestanyes</div>
+						<hr>
+						<div class="info">
+						
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">30€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Allisat+Tinte+ <br>Bòtox de celles</div>
+						<hr>
+						<div class="info">
+
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">30€</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="caja2">
+						<div class="texto2 texto_baseSemiBold">Tinte+Bòtox de celles 
+						</div>
+						<hr>
+						<div class="info">
+
+							<div class="icon_coins">
+								<img  src="IMG/coins.png" alt="coins">
+								<p class="texto_icon_coins texto_base">25€</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+		
+		
+	</div>
+
+
+<!-- FOOTER -->
+	<section id="footer">
+		<div class="logo">
+			<a href="index.html" ><img src="IMG/logo.png" alt="logo"></a>
+		</div>
+		<div class="texto_footer">
+			<p class="direccion">Carrer de Vilamar, 32, 43820 Calafell, Tarragona</p>
+			<p class="numero">+34 123 456  789</p>
+			<a class="correo" href="mailto:info@essentialbeauty.com">info@essentialbeauty.com</a>
+			<p>Copyright 2022 - Fet per Alba Yñiguez</p>
+		</div>
+	</section>
+	
+</body>
+</html>

@@ -1,0 +1,1022 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#top
+{
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+#top img  
+{
+  width: 30px;
+  height: auto;
+}
+
+body
+{
+  z-index: 1;
+}
+
+/*********************** DESKTOP ***************************/
+
+/*CAPÇALERA*/
+
+#cabecera 
+{
+  width: 100%;
+  height: 100px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.logo img
+{
+  width: 170px;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  left: 50px;
+  bottom: 15px; 
+}
+
+.instagram img
+{
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 18%;
+  botom: 5%;
+
+}
+
+.reservar
+{
+  width: 200px;
+  height: 50px;
+  background-color: #AACAE3;
+  cursor: pointer;
+  list-style: none;
+  float: right;
+  position: absolute;
+  right: 110px;
+  padding-top: 7px;
+  border-radius: 0 25px 0 0;
+}
+
+.reservar li a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.reservar:hover
+{
+  background-color: #D5C36A;
+  transition: .5s;
+}
+
+
+/*MENU*/
+
+input 
+{
+  display: none;
+}
+
+.open 
+{
+  background-color: black;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.open:before 
+{
+  content: "";
+  background-color: black;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: -8px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.open:after 
+{
+  content: "";
+  background-color: black;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: 4px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.menuOpen 
+{
+  width: 24px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+  float: right;
+  position: absolute;
+  right: 50px;
+  bottom: 60px;
+}
+
+.menuOpen:hover .open:before 
+{
+  top: -9px;
+}
+
+.menuOpen:hover .open:after 
+{
+  top: 5px;
+}
+
+.menu 
+{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #5AA9E6;
+  z-index: 899;
+}
+
+.menu label 
+{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.menu .menuContent 
+{
+  position: relative;
+  top: 25%;
+  text-align: left;
+  padding-bottom: 20px;
+  margin-top: -170px;
+}
+
+.menu ul 
+{
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.menu ul li a 
+{
+  display: block;
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 10px 0;
+  padding-left: 50px;
+}
+
+.menu ul li a:hover 
+{
+  color: #5AA9E6;
+}
+
+.menu ul li:hover 
+{
+  background: #FFE45E;
+}
+
+.menuEffects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+  transform: translateY(0%);
+  transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects 
+{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects ul 
+{
+  opacity: 1;
+}
+
+
+#menuToggle:checked ~ .menuOpen .open {
+  background-color: transparent;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+  content: "";
+  background-color: black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+  content: "";
+  background-color: black;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0;
+  right: 0;
+  /*z-index: 1;*/
+  z-index: 999;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects ul {
+  transform: translateY(-30%);
+}
+
+
+/*TEXTO Y TITULO*/
+
+#texto
+{
+	width: 735px;
+	height: 90px;
+	margin-left: 50px;
+	margin-top: 100px;
+}
+
+#titulo
+{
+	writing-mode: vertical-lr;
+	float: right;
+	margin-top: -90px;
+}
+
+
+/*PESTAÑAS ACORDEÓN*/
+
+.servicios
+{
+	width: 1515px;
+	height: 1200PX;
+/*  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.5);*/
+  margin-left: 50px;
+  margin-top: 145px;
+}
+
+.triggerTab 
+{
+  width: 1515px;
+  height: 140px;
+  background-color: #5AA9E6;
+   border-style: solid;
+  /*float: left;*/
+  cursor: pointer;
+}
+
+.targetTabs
+{
+  width: 100%;
+  height: 600px;
+/*  background-color: lightpink;*/
+  border-style: solid;
+  display: none;
+  padding-top: 55px;
+  /*HEIGHT: 0 I TREURE NONE I FICAR ANIMACIÓ*/
+}
+
+.targetTabs p
+{
+    width: 660px;
+    text-align: justify; 
+}
+
+
+#contTab1
+{
+  background-color: white;
+}
+
+#contTab1 p
+{
+  height: auto;
+  margin-left: 70px;
+  margin-top: -30px;
+}
+
+
+#contTab2
+{
+  background-color: white;
+}
+
+#contTab2 p
+{
+  height: auto;
+  margin-left: 70px;
+  margin-top: -30px;
+}
+ 
+#contTab3
+{
+    background-color: white;
+}
+
+#contTab3 p
+{
+  height: auto;
+  margin-left: 30px;
+}
+
+#contTab4
+{
+    background-color: white;
+
+}
+
+#contTab4 p
+{
+  height: auto;
+  margin-left: 70px;
+  width: 70%;
+  margin-top: -30px;
+}
+
+
+#contTab5
+{
+    background-color: white;
+
+}
+
+#contTab5 p
+{
+  height: auto;
+  margin-left: 70px;
+  margin-top: -30px;
+}
+
+
+#contenidor
+{
+  height: auto;
+  overflow: hidden;
+  transition: height 1s;
+  display: inline-flex;
+/*  background-color: hotpink;*/
+}
+
+.caja
+{
+  width: 280px;
+  height: 250px;
+  border-style: solid;
+  margin-left: 50px;
+  border-radius: 30px;
+  margin-bottom: 140px;
+  margin-top: 95px;
+  background-color: white;
+}
+
+hr
+{
+  color: black;
+}
+
+.texto
+{
+  background-color: #AACAE3;
+  width: 273px;
+  height: 95px;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+p .texto_icon_reloj
+{
+  margin-bottom: 20px;
+}
+
+.icon_reloj img
+{
+  width: 35px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+.icon_coins img
+{
+  width: 40px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+.caja2
+{
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  margin-left: 13px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  margin-top: 95px;
+}
+
+.texto2
+{
+  background-color: #AACAE3;
+  width: 194px;
+  height: 95px;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.caja3
+{
+  width: 230px;
+  height: 200px;
+  border-style: solid;
+  margin-left: 50px;
+  border-radius: 30px;
+  margin-bottom: 140px;
+  margin-top: 95px;
+}
+
+.texto3
+{
+  background-color: #AACAE3;
+  width: 223px;
+  height: 95px;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.caja4
+{
+  width: 230px;
+  height: 250px;
+  border-style: solid;
+  margin-left: 18px;
+  border-radius: 30px;
+  margin-bottom: 140px;
+  margin-top: 60px;
+}
+
+.texto4
+{
+  background-color: #AACAE3;
+  width: 223px;
+  height: 95px;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.info4
+{
+  padding: 5px;
+
+}
+.texto_basemini
+{
+  font-family: Montserrat_Regular;
+  font-size: 16px;
+}
+
+
+
+.caja5
+{
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  margin-left: 100px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  margin-top: 95px;
+  align-items: center;
+}
+
+
+.texto5
+{
+  background-color: #AACAE3;
+  width: 194px;
+  height: 95px;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+
+.texto6
+{
+  background-color: #AACAE3;
+  width: 194px;
+  height: 95px;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+/*FOOTER*/
+#footer
+{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(108, 122, 137, 0.3);
+  position: relative;
+  top: 300px;
+}
+
+#footer img
+{
+  width: 130px;
+  height: auto;
+}
+
+.texto_footer
+{
+  display: inline-flex;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+
+.direccion
+{
+  width: 300px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.numero
+{
+  width: 200px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.correo
+{
+  text-decoration: none;
+  color: black;
+  width: 300px;
+  height: auto;
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************** TABLET ***************************/
+
+
+@media only screen and (max-width: 900px) {
+
+
+#top
+  {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 2;
+  }
+
+  #top img  
+  {
+    width: 20px;
+    height: auto;
+  }
+  
+
+  /*CAPÇELERA*/
+
+  #cabecera 
+  {
+    margin-top: 55px;
+  }
+
+  .logo img
+  {
+    width: 130px;
+    bottom: 40px;
+    left: 30px;
+  }
+
+  .instagram img
+  {
+    width: 30px;
+    right: 25%;
+    bottom: 70%;
+  }
+
+  .reservar
+  {
+    width: 120px;
+    height: 30px;
+    right: 70px;
+    padding-top: 6px;
+    padding-right: 3px;
+    border-radius: 0 25px 0 0;
+  }
+
+
+  /*MENU*/
+
+  .menuOpen 
+  {
+    bottom: 65px;
+    right: 30px;
+  }
+
+  .menu 
+  {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .menu .menuContent 
+  {
+    position: relative;
+    top: 25%;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-top: -50px;
+    margin-right: 5px;
+  }
+
+
+  /*TEXTO Y TITULO*/
+
+  #texto
+  {
+    width: 567px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  #titulo
+  {
+    margin-top: -60px;
+  }
+
+
+  /*PESTAÑAS ACORDEÓN*/
+
+  .servicios
+  {
+    width: 650px;
+    height: 1200px;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+
+  .triggerTab 
+  {
+    width: 650px;
+    height: 100px;
+    padding-top: 25px;
+    padding-left: 10px;
+  }
+
+  .targetTabs
+  {
+    width: 100%;
+    height: 600px;
+    padding-top: 55px;
+  }
+
+  .targetTabs p
+  {
+    width: 530px;
+    text-align: left;
+  }
+
+  #contTab1 p
+  {
+    height: auto;
+    margin-left: 45px;
+    margin-top: -30px;
+  }
+
+  #contTab2 p
+  {
+    height: auto;
+    margin-left: 45px;
+    margin-top: -30px;
+  }
+   
+  #contTab3 p
+  {
+    height: auto;
+    margin-left: 30px;
+    margin-top: -20px;
+  }
+
+  #contTab4 p
+  {
+    height: auto;
+    margin-left: 30px;
+    width: 75%;
+    margin-top: -30px;
+  }
+
+  #contTab5 p
+  {
+    height: auto;
+    margin-left: 30px;
+    margin-top: -30px;
+  }
+
+  #depilacio_facial
+  {
+    width: 90%;
+    height: auto;
+    display: flex;
+
+  }
+
+  .caja
+  {
+    width: 171px;
+    height: 183px;
+    border-style: solid;
+    margin-left: 15px;
+    margin-bottom: 140px;
+    margin-top: 95px;
+  }
+
+  .texto
+  {
+    background-color: #AACAE3;
+    width: 165px;
+    height: 75px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  p .texto_icon_reloj .texto_icon_coins
+  {
+    margin-bottom: 10px;
+  }
+
+  .icon_reloj img
+  {
+    width: 25px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+
+  .icon_coins img
+  {
+    width: 25px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+
+  .caja2
+  {
+    width: 150px;
+    height: 150px;
+    margin-left: 13px;
+    margin-bottom: 50px;
+    margin-top: 85px;
+  }
+
+  .texto2
+  {
+    width: 144px;
+    height: 75px;
+    padding-top: 13px;
+  }
+
+  .caja3
+  {
+    width: 230px;
+    height: 200px;
+    border-style: solid;
+    margin-left: 50px;
+    border-radius: 30px;
+    margin-bottom: 140px;
+    margin-top: 95px;
+  }
+
+  .texto3
+  {
+    background-color: #AACAE3;
+    width: 223px;
+    height: 95px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  .caja4
+  {
+    width: 230px;
+    height: 250px;
+    border-style: solid;
+    margin-left: 18px;
+    border-radius: 30px;
+    margin-bottom: 140px;
+    margin-top: 60px;
+  }
+
+  .texto4
+  {
+    background-color: #AACAE3;
+    width: 223px;
+    height: 95px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  .info4
+  {
+    padding: 5px;
+
+  }
+  .texto_basemini
+  {
+    font-family: Montserrat_Regular;
+    font-size: 16px;
+  }
+
+
+
+  .caja5
+  {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    margin-left: 100px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    margin-top: 95px;
+    align-items: center;
+  }
+
+
+  .texto5
+  {
+    background-color: #AACAE3;
+    width: 194px;
+    height: 95px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+
+  .texto6
+  {
+    background-color: #AACAE3;
+    width: 194px;
+    height: 95px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*FOOTER*/
+
+  #footer
+  {
+    top: 100px;
+  }
+
+  #footer img
+  {
+    width: 100px;
+    margin-bottom: -20px;
+  }
+
+  .texto_footer
+  {
+    display: inline-flex;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+  }
+
+  .direccion
+  {
+    width: 250px;
+    height: auto;
+    margin-left: 15px;
+  }
+
+  .numero
+  {
+    width: 135px;
+    height: auto;
+    margin-left: 15px;
+  }
+
+  .correo
+  {
+    width: 200px;
+    margin-left: 30px;
+  }
+
+  .copyright
+  {
+    font-size: 10px;
+    width: 190px;
+    position: absolute;
+    left: 30%;
+    top: 45px;
+  }
+
+}
+
+
+
+
+
+

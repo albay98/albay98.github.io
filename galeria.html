@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/galeria.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" type="image/png" href="IMG/favicon.png">
+	<script src="JAVA/galeria.js"></script>
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/all.min.css">
+	<title>Essential Beauty</title>
+</head>
+<body>
+	<div id="top">
+		<a href="#"><img src="IMG/up-arrow.png" alt="logo boton subida"></a>
+	</div>
+
+<!-- CABECERA -->
+	<nav id="cabecera">
+		<div class="logo">
+			<a href="index.html" ><img src="IMG/logo.png" alt="logo"></a>
+		</div>
+
+		<div class="instagram">
+			<a href="https://www.instagram.com/essentialbeautycalafell/" target="_blank"><img src="IMG/instagram.png" alt="instagram"></a>
+		</div>
+
+		<div class="reservar boton">
+			<li><a class="boton" href="reservar.html">RESERVAR</a></li>
+		</div>
+
+		<div id="menuArea">
+   			<input type="checkbox" id="menuToggle"></input>
+
+  			<label for="menuToggle" class="menuOpen">
+    			<div class="open"></div>
+  			</label>
+
+  			<div class="menu menuEffects">
+    			<label for="menuToggle"></label>
+    			<div class="menuContent">
+      			<ul>
+        			<li><a href="tractaments.html" class="titulo_home">TRACTAMENTS</a></li>
+        			<li><a href="galeria.html" class="titulo_home">GALERIA</a></li>
+        			<li><a href="reservar.html" class="titulo_home">RESERVAR</a></li>
+        			<li><a href="contacte.html" class="titulo_home">CONTACTE</a></li>
+      			</ul>
+    		</div>
+  		</div> 
+	</nav>
+
+
+<!-- TEXTO / TITULO -->
+	<div id="texto">
+		<p class="texto_base">Perquè puguis veure els resultats dels nostr@s client@s!</p>
+	</div>
+
+	<div id="titulo">
+		<h1 class="titulo_vertical">GALERIA</h1>
+	</div>
+
+	<section id="pestanyes">
+		<div class="pestanya_titulo"><p>TOTES</p></div>
+
+		<div class="pestanya_depilacio" onclick="tabDepilacion('conTabDepilacion')">
+			<p>DEPILACIÓ FACIAL</p>
+		</div>
+
+		<div class="pestanya_micropigmentacio"><p>MICRO <br>PIGMENTACIÓ</p></div>
+		<div class="pestanya_maquillatge"><p>MAQUILLATGE</p></div>
+		<div class="pestanya_pestanyes"><p>PESTANYES I CELLES</p></div>
+		<div class="pestanya_facials"><p>TRACTAMENTS FACIALS</p></div>
+	</section>
+
+
+<!-- IMÁGENES -->	
+	<div id="imagen">
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/maquillaje1.jpg" alt="maquillaje1">
+		</div>
+
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/pestañas1.jpg" alt="pestañas1">
+		</div>
+
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/tractaments1.jpg" alt="tractaments1">
+		</div>
+
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/cejas1.jpg" alt="tractaments1">
+		</div>
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/depilacion1.jpg" alt="depilacion1">
+		</div>
+
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/pestañas2.jpg" alt="pestañas2">
+		</div>
+
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/maquillaje2.jpg" alt="maquillaje2">
+		</div>
+
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/eyeline.jpg" alt="eyeline">
+		</div>
+
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/tratamientos2.jpg" alt="tractaments2">
+		</div>
+
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/cejas2.jpg" alt="tractaments1">
+		</div>
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/maquillatge3.jpg" alt="maquillatge3">
+		</div>
+		<div class="item">
+			<img class="imgGaleria" src="IMG/GALERIA/depilacion2.jpg" alt="depilacion2">
+		</div>
+	</div>
+
+	<div id="modalGal">
+
+		<div id="imagetoShow"></div>
+
+		<i id="creuTancarLB" class="fas fa-times" onclick="closeLightbox()"></i>
+		<button class="botoLB botoEsquerra" onclick="prevImgGal()"><i class="fas fa-angle-left"></i></button>
+		<button class="botoLB botoDreta" onclick="nextImgGal()"><i class="fas fa-angle-right"></i></button>
+	
+	</div>
+
+
+
+
+<!-- FOOTER -->
+	<section id="footer">
+		<div class="logo">
+			<a href="index.html" ><img src="IMG/logo.png" alt="logo"></a>
+		</div>
+		<div class="texto_footer">
+			<p class="direccion">Carrer de Vilamar, 32, 43820 Calafell, Tarragona</p>
+			<p class="numero">+34 123 456  789</p>
+			<a class="correo" href="mailto:info@essentialbeauty.com">info@essentialbeauty.com</a>
+
+			<p class="copyright">Copyright 2022 - Fet per Alba Yñiguez</p>
+		</div>
+	</section>
+	
+
+
+<!-- JAVA -->
+
+	<script>
+
+  		readyLightbox();
+
+	</script>
+</body>
+</html>
