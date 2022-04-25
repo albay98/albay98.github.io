@@ -283,136 +283,13 @@ input
 }
 
 
-/*PESTANYES*/
-#pestanyes
-{
-	width: 780px;
-	height: 190px;
-/*	background-color: lightgreen;*/
-	margin-left:50px ;
-}
-
-#pestanyes p
-{
-  font-family: Montserrat_SemiBold;
-  font-size: 27px;
-  text-align: center;
-  padding: 5px;
-}
-
-.pestanya_titulo 
-{
-	width: 240px;
-	height: 80px;
-	background-color: #AACAE3;
-	cursor: pointer;
-	padding-top: 20px;
-  border-radius: 0 25px 0 0;
-}
-
-.pestanya_titulo:hover
-{
-  background-color: #D5C36A;
-}
-
-.pestanya_depilacio
-{
-	width: 240px;
-	height: 80px;
-	background-color: #AACAE3;
-	cursor: pointer;
-	margin-left: 270px;
-	margin-top: -80px;
-  border-radius: 0 25px 0 0;
-}
-
-.pestanya_depilacio:hover
-{
-  background-color: #D5C36A;
-}
-
-.pestanya_micropigmentacio
-{
-	width: 240px;
-	height: 80px;
-	background-color: #AACAE3;
-	cursor: pointer;
-	margin-left: 540px;
-	margin-top: -80px;
-  border-radius: 0 25px 0 0;
-}
-
-.pestanya_micropigmentacio:hover
-{
-  background-color: #D5C36A;
-}
-
-.pestanya_maquillatge 
-{
-	width: 240px;
-	height: 80px;
-	background-color: #AACAE3;
-	cursor: pointer;
-	padding-top: 20px;
-	margin-top: 30px;
-  border-radius: 0 25px 0 0;
-}
-
-.pestanya_maquillatge:hover
-{
-  background-color: #D5C36A;
-}
-
-.pestanya_pestanyes
-{
-	width: 240px;
-	height: 80px;
-	background-color: #AACAE3;
-	cursor: pointer;
-	margin-left: 270px;
-	margin-top: -80px;
-  border-radius: 0 25px 0 0;
-}
-
-.pestanya_pestanyes:hover
-{
-  background-color: #D5C36A;
-}
-
-.pestanya_facials
-{
-	width: 240px;
-	height: 80px;
-	background-color: #AACAE3;
-	cursor: pointer;
-	margin-left: 540px;
-	margin-top: -80px;
-  border-radius: 0 25px 0 0;
-}
-
-.pestanya_facials:hover
-{
-  background-color: #D5C36A;
-}
-
-#conTabDepilacion
-{
-
-  display: none;
-}
-
-.showDepilacion
-{
-  display: block!important;
-}
-
 /*IMATGES*/
 #imagen
 {
 	width: 1522px;
 	height: 1614px;
 	margin-left: 50px;
-	margin-top: 105px;
+	margin-top: 50px;
 /*	background-color: darkorange;*/
 }
 
@@ -671,88 +548,13 @@ input
     margin-top: -90px;
   }
 
-
-  /*PESTANYES*/
-  #pestanyes
-  {
-    width: 494px;
-    height: 120px;
-    margin-left:30px;
-  }
-
-  #pestanyes p
-  {
-    font-family: Montserrat_SemiBold;
-    font-size: 18px;
-    text-align: center;
-    padding: 0;
-  }
-
-  .pestanya_titulo 
-  {
-    width: 140px;
-    height: 50px;
-    background-color: #AACAE3;
-    cursor: pointer;
-    padding-top: 15px;
-    border-radius: 0 25px 0 0;
-  }
-
-  .pestanya_depilacio
-  {
-    width: 140px;
-    height: 50px;
-    margin-left: 178px;
-    margin-top: -47px;
-    padding-top: 5px;
-  }
-
-  .pestanya_micropigmentacio
-  {
-    width: 140px;
-    height: 50px;
-    margin-left: 368px;
-    margin-top: -47px;
-    padding-top: 5px;
-  }
-
-  .pestanya_maquillatge 
-  {
-    width:140px;
-    height: 50px;
-    padding-top: 20px;
-    margin-top: 15px;
-    padding-top: 15px;
-
-  }
-
-  .pestanya_pestanyes
-  {
-    width: 140px;
-    height: 50px;
-    margin-left: 178px;
-    margin-top: -50px;
-    padding-top: 5px;
-  }
-
-  .pestanya_facials
-  {
-    width: 155px;
-    height: 50px;
-    margin-left: 368px;
-    margin-top: -47px;
-    padding-top: 5px;
-  }
-
-
-
   /*IMATGES*/
   #imagen
   {
     width: 662px;
     height: 862px;
     margin-left: 30px;
-    margin-top: 105px;
+    margin-top: 30px;
   }
 
   .imgGaleria
@@ -966,91 +768,21 @@ input
   }
 
 
-  /*PESTANYES*/
-  #pestanyes
-  {
-    width: 256px;
-    height: 145px;
-    margin-left:30px;
-  }
-
-  #pestanyes p
-  {
-    font-family: Montserrat_SemiBold;
-    font-size: 15px;
-    text-align: center;
-    padding: 0;
-  }
-
-  .pestanya_titulo 
-  {
-    width: 120px;
-    height: 40px;
-    padding-top: 10px;
-  }
-
-  .pestanya_depilacio
-  {
-    width: 120px;
-    height: 40px;
-    margin-left: 148px;
-    margin-top: -40px;
-    padding-top: 3px;
-  }
-
-  .pestanya_micropigmentacio
-  {
-    width: 123px;
-    height: 45px;
-    margin-left: 0px;
-    margin-top: 11px;
-    padding-top: 5px;
-  }
-
-  .pestanya_maquillatge 
-  {
-    width:124px;
-    height: 40px;
-    padding-top: 10px;
-    margin-top: -40px;
-    margin-left: 148px;
-  }
-
-  .pestanya_pestanyes
-  {
-    width: 123px;
-    height: 45px;
-    margin-left: 0px;
-    margin-top: 11px;
-    padding-top: 4px;
-  }
-
-  .pestanya_facials
-  {
-    width: 130px;
-    height: 45px;
-    margin-left: 148px;
-    margin-top: -47px;
-    padding-top: 5px;
-  }
-
-
-
   /*IMATGES*/
   #imagen
   {
     width: 369px;
     height: 478px;
     margin-left: 10px;
-    margin-top: 55px;
+    margin-top: 10px;
   }
 
   .imgGaleria
   {
-    width: 114px;
+    width: 110px;
     height: 152px;
     margin-right: 5px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 
   }
   
@@ -1102,7 +834,7 @@ input
 
   #footer
   {
-    top: 400px;
+    top: 250px;
   }
 
   #footer img
