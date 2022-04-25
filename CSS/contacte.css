@@ -619,13 +619,11 @@ h3
 
   /*MAPA*/
 
-  .mapa /*iframe*/
+  .mapa iframe
   {
     width: 75%;
     position: absolute;
     top: 35%;
-    background-color: orange;
-
   }
 
 
@@ -734,7 +732,7 @@ h3
 #top
   {
     position: fixed;
-    right: 45%;
+    right: 50%;
     bottom: 20px;
     z-index: 2;
   }
@@ -840,14 +838,13 @@ h3
 
   /*MAPA*/
 
-  .mapa /*iframe*/
+  .mapa iframe
   {
     width: 75%;
     height: 45%;
     position: absolute;
     top: 35%;
     right: 20%;
-    background-color: orange;
   }
 
 
@@ -933,7 +930,6 @@ h3
     width: 100%;
   }
 
-
   .container-all:target .popup
   {
     top: 40%;
@@ -964,7 +960,7 @@ h3
 
   #footer
   {
-    top: 100px;
+    top: 250px;
   }
 
   #footer img
