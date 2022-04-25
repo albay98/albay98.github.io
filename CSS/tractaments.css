@@ -393,20 +393,9 @@ input
   height: auto;
   overflow: hidden;
   transition: height 1s;
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
 /*  background-color: hotpink;*/
-}
-
-.caja
-{
-  width: 280px;
-  height: 250px;
-  border-style: solid;
-  margin-left: 50px;
-  border-radius: 30px;
-  margin-bottom: 140px;
-  margin-top: 95px;
-  background-color: white;
 }
 
 hr
@@ -429,15 +418,6 @@ p .texto_icon_reloj
   margin-bottom: 20px;
 }
 
-.icon_reloj img
-{
-  width: 35px;
-  height: auto;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-
 .icon_coins img
 {
   width: 40px;
@@ -445,7 +425,6 @@ p .texto_icon_reloj
   margin-top: 20px;
   margin-left: 20px;
 }
-
 
 .caja2
 {
@@ -714,7 +693,7 @@ p .texto_icon_reloj
 
   .servicios
   {
-    width: 650px;
+    width: 655px;
     height: 1200px;
     margin-top: 100px;
     margin-left: 30px;
@@ -722,7 +701,7 @@ p .texto_icon_reloj
 
   .triggerTab 
   {
-    width: 650px;
+    width: 670px;
     height: 100px;
     padding-top: 25px;
     padding-left: 10px;
@@ -730,15 +709,21 @@ p .texto_icon_reloj
 
   .targetTabs
   {
-    width: 100%;
-    height: 600px;
-    padding-top: 55px;
+    width: 102.5%;
+    height: auto;
+    padding-top: 45px;
   }
 
   .targetTabs p
   {
     width: 530px;
     text-align: left;
+  }
+
+  #contenidor
+  {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #contTab1 p
@@ -753,6 +738,7 @@ p .texto_icon_reloj
     height: auto;
     margin-left: 45px;
     margin-top: -30px;
+    margin-bottom: 30px;
   }
    
   #contTab3 p
@@ -765,7 +751,7 @@ p .texto_icon_reloj
   #contTab4 p
   {
     height: auto;
-    margin-left: 30px;
+    margin-left: 45px;
     width: 75%;
     margin-top: -30px;
   }
@@ -773,27 +759,10 @@ p .texto_icon_reloj
   #contTab5 p
   {
     height: auto;
-    margin-left: 30px;
-    margin-top: -30px;
+    margin-left: 45px;
+    margin-top: -27px;
   }
 
-  #depilacio_facial
-  {
-    width: 90%;
-    height: auto;
-    display: flex;
-
-  }
-
-  .caja
-  {
-    width: 171px;
-    height: 183px;
-    border-style: solid;
-    margin-left: 15px;
-    margin-bottom: 140px;
-    margin-top: 95px;
-  }
 
   .texto
   {
@@ -809,15 +778,6 @@ p .texto_icon_reloj
     margin-bottom: 10px;
   }
 
-  .icon_reloj img
-  {
-    width: 25px;
-    height: auto;
-    margin-top: 20px;
-    margin-left: 15px;
-  }
-
-
   .icon_coins img
   {
     width: 25px;
@@ -826,21 +786,20 @@ p .texto_icon_reloj
     margin-left: 15px;
   }
 
-
   .caja2
   {
     width: 150px;
     height: 150px;
     margin-left: 13px;
-    margin-bottom: 50px;
-    margin-top: 85px;
+    margin-bottom: 30px;
+    margin-top:20px;
   }
 
   .texto2
   {
     width: 144px;
     height: 75px;
-    padding-top: 13px;
+    padding-top: 8px;
   }
 
   .caja3
@@ -866,20 +825,20 @@ p .texto_icon_reloj
 
   .caja4
   {
-    width: 230px;
-    height: 250px;
+    width: 195px;
+    height: 260px;
     border-style: solid;
-    margin-left: 18px;
+    margin-left: 20px;
     border-radius: 30px;
-    margin-bottom: 140px;
-    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
 
   .texto4
   {
     background-color: #AACAE3;
-    width: 223px;
-    height: 95px;
+    width: 190px;
+    height: 70px;
     border-radius: 30px 30px 0px 0px;
     text-align: center;
     padding-top: 25px;
@@ -887,80 +846,47 @@ p .texto_icon_reloj
 
   .info4
   {
-    padding: 5px;
+    padding: 8px;
 
   }
+
   .texto_basemini
   {
     font-family: Montserrat_Regular;
-    font-size: 16px;
+    font-size: 15px;
   }
-
-
 
   .caja5
   {
-    width: 200px;
-    height: 200px;
+    width: 155px;
+    height: 173px;
     border-style: solid;
-    margin-left: 100px;
+    margin-left: 50px;
     border-radius: 30px;
     margin-bottom: 50px;
-    margin-top: 95px;
+    margin-top: 65px;
     align-items: center;
   }
-
 
   .texto5
   {
     background-color: #AACAE3;
-    width: 194px;
-    height: 95px;
+    width: 148px;
+    height: 85px;
     border-radius: 30px 30px 0px 0px;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 35px;
   }
-
 
   .texto6
   {
     background-color: #AACAE3;
-    width: 194px;
-    height: 95px;
+    width: 143px;
+    height: 75px;
     border-radius: 30px 30px 0px 0px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 7px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   /*FOOTER*/
@@ -1020,3 +946,352 @@ p .texto_icon_reloj
 
 
 
+/*********************** MOBILE ***************************/
+
+
+@media only screen and (max-width: 450px) {
+
+
+  #top
+  {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 2;
+  }
+
+  #top img  
+  {
+    width: 20px;
+    height: auto;
+  }
+  
+
+  /*CAPÇELERA*/
+
+  #cabecera 
+  {
+    margin-top: 25px;
+  }
+
+  .logo img
+  {
+    width: 120px;
+    bottom: 40px;
+    left: 10px;
+  }
+
+  .instagram img
+  {
+    width: 24px;
+    right: 37%;
+    bottom: 75%;
+  }
+
+  .reservar
+  {
+    width: 95px;
+    height: 25px;
+    right: 50px;
+    padding-top: 4px;
+    padding-right: 4px;
+  }
+
+
+  /*MENU*/
+
+  .menuOpen 
+  {
+    width: 15px;
+    bottom: 70px;
+    right: 20px;
+  }
+
+  .menu 
+  {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .menu .menuContent 
+  {
+    position: relative;
+    top: 25%;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-top: -50px;
+    margin-right: 0px;
+  }
+
+  .menu ul li a 
+  {
+    padding-left: 10px;
+  }
+
+  /*TEXTO Y TITULO*/
+
+  #texto
+  {
+    width: 337px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+
+  #titulo
+  {
+    margin-top: -60px;
+  }
+
+
+  /*PESTAÑAS ACORDEÓN*/
+
+  .servicios
+  {
+    width: 350px;
+    height: 1200px;
+    margin-top: 135px;
+    margin-left: 10px;
+  }
+
+  .triggerTab 
+  {
+    width: 360px;
+    height: 100px;
+    padding-top: 13px;
+    padding-left: 10px;
+  }
+
+  .targetTabs
+  {
+    width: 102.5%;
+    height: auto;
+    padding-top: 45px;
+  }
+
+  .targetTabs p
+  {
+    width: 290px;
+    text-align: left;
+  }
+
+  #contenidor
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #contTab1 p
+  {
+    height: auto;
+    margin-left: 45px;
+    margin-top: -30px;
+  }
+
+  #contTab2 p
+  {
+    height: auto;
+    margin-left: 45px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+   
+  #contTab3 p
+  {
+    height: auto;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+
+  #contTab4 p
+  {
+    height: auto;
+    margin-left: 45px;
+    width: 75%;
+    margin-top: -30px;
+  }
+
+  #contTab5 p
+  {
+    height: auto;
+    margin-left: 45px;
+    margin-top: -27px;
+  }
+
+  .texto
+  {
+    background-color: #AACAE3;
+    width: 165px;
+    height: 75px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  p .texto_icon_coins
+  {
+    margin-bottom: 10px;
+  }
+
+  .icon_coins img
+  {
+    width: 25px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .caja2
+  {
+    width: 150px;
+    height: 150px;
+    margin-left: 13px;
+    margin-bottom: 30px;
+    margin-top:20px;
+  }
+
+  .texto2
+  {
+    width: 144px;
+    height: 75px;
+    padding-top: 8px;
+  }
+
+  .caja3
+  {
+    width: 230px;
+    height: 200px;
+    border-style: solid;
+    margin-left: 50px;
+    border-radius: 30px;
+    margin-bottom: 140px;
+    margin-top: 95px;
+  }
+
+  .texto3
+  {
+    background-color: #AACAE3;
+    width: 223px;
+    height: 95px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  .caja4
+  {
+    width: 165px;
+    height: 280px;
+    border-style: solid;
+    margin-left: 7px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .texto4
+  {
+    background-color: #AACAE3;
+    width: 160px;
+    height: 60px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .info4
+  {
+    padding: 8px;
+
+  }
+
+  .texto_basemini
+  {
+    font-family: Montserrat_Regular;
+    font-size: 15px;
+  }
+
+  .caja5
+  {
+    width: 140px;
+    height: 133px;
+    border-style: solid;
+    margin-left: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    align-items: center;
+  }
+
+  .texto5
+  {
+    background-color: #AACAE3;
+    width: 135px;
+    height: 60px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .texto6
+  {
+    background-color: #AACAE3;
+    width: 143px;
+    height: 75px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    padding-top: 7px;
+  }
+
+  /*FOOTER*/
+
+  #footer
+  {
+    top: 600px;
+  }
+
+  #footer img
+  {
+    width: 80px;
+    margin-bottom: -10px;
+    left: 5;
+  }
+
+  .texto_footer
+  {
+    display: inline-flex;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+  }
+
+  .direccion
+  {
+    width: 100px;
+    height: auto;
+    margin-left: 30px;
+  }
+
+  .numero
+  {
+    width: 80px;
+    height: auto;
+    margin-left: 8px;
+  }
+
+  .correo
+  {
+    width: 150px;
+    margin-left: -80px;
+    margin-top: 20px;
+  }
+
+  .copyright
+  {
+    font-size: 10px;
+    width: 190px;
+    position: absolute;
+    left: 15%;
+    top: 50px;
+  }
+
+}
